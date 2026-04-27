@@ -1,0 +1,32 @@
+[1.469s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_vision build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/install.log --single-version-externally-managed install_data
+[1.828s] running egg_info
+[1.828s] creating ../build/teleop_vision/teleop_vision.egg-info
+[1.863s] writing ../build/teleop_vision/teleop_vision.egg-info/PKG-INFO
+[1.868s] writing dependency_links to ../build/teleop_vision/teleop_vision.egg-info/dependency_links.txt
+[1.871s] writing requirements to ../build/teleop_vision/teleop_vision.egg-info/requires.txt
+[1.872s] writing top-level names to ../build/teleop_vision/teleop_vision.egg-info/top_level.txt
+[1.875s] writing manifest file '../build/teleop_vision/teleop_vision.egg-info/SOURCES.txt'
+[1.946s] reading manifest file '../build/teleop_vision/teleop_vision.egg-info/SOURCES.txt'
+[1.949s] writing manifest file '../build/teleop_vision/teleop_vision.egg-info/SOURCES.txt'
+[1.950s] running build
+[1.951s] running build_py
+[1.952s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build
+[1.953s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib
+[1.953s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision
+[1.955s] copying teleop_vision/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision
+[1.958s] running install
+[1.964s] running install_lib
+[2.000s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision
+[2.002s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision
+[2.007s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision/__init__.py to __init__.cpython-312.pyc
+[2.011s] running install_data
+[2.012s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/share/ament_index
+[2.013s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/share/ament_index/resource_index
+[2.014s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/share/ament_index/resource_index/packages
+[2.016s] copying resource/teleop_vision -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/share/ament_index/resource_index/packages
+[2.019s] copying package.xml -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/share/teleop_vision
+[2.021s] running install_egg_info
+[2.063s] Copying ../build/teleop_vision/teleop_vision.egg-info to /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision-0.0.0-py3.12.egg-info
+[2.091s] running install_scripts
+[2.313s] writing list of installed files to '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/install.log'
+[2.338s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_vision build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/install.log --single-version-externally-managed install_data

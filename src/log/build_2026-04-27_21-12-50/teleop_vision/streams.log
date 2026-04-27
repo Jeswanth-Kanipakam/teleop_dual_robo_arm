@@ -1,0 +1,45 @@
+[1.542s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_vision build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/install.log --single-version-externally-managed install_data
+[1.910s] running egg_info
+[1.943s] writing ../build/teleop_vision/teleop_vision.egg-info/PKG-INFO
+[1.947s] writing dependency_links to ../build/teleop_vision/teleop_vision.egg-info/dependency_links.txt
+[1.950s] writing requirements to ../build/teleop_vision/teleop_vision.egg-info/requires.txt
+[1.953s] writing top-level names to ../build/teleop_vision/teleop_vision.egg-info/top_level.txt
+[2.027s] reading manifest file '../build/teleop_vision/teleop_vision.egg-info/SOURCES.txt'
+[2.030s] writing manifest file '../build/teleop_vision/teleop_vision.egg-info/SOURCES.txt'
+[2.032s] running build
+[2.032s] running build_py
+[2.034s] copying teleop_vision/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision
+[2.038s] copying teleop_vision/vision_node.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision
+[2.042s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules
+[2.044s] copying Detector_Modules/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules
+[2.046s] copying Detector_Modules/PoseDetectorModule.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules
+[2.050s] copying Detector_Modules/HandDetectorModule.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules
+[2.054s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/robo_pub
+[2.056s] copying robo_pub/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/robo_pub
+[2.058s] copying robo_pub/ros_publisher.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/robo_pub
+[2.062s] running install
+[2.068s] running install_lib
+[2.104s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision
+[2.108s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/teleop_vision/vision_node.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision
+[2.113s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules
+[2.115s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules
+[2.118s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules/PoseDetectorModule.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules
+[2.123s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/Detector_Modules/HandDetectorModule.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules
+[2.128s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/robo_pub
+[2.130s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/robo_pub/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/robo_pub
+[2.133s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build/lib/robo_pub/ros_publisher.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/robo_pub
+[2.139s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision/__init__.py to __init__.cpython-312.pyc
+[2.143s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision/vision_node.py to vision_node.cpython-312.pyc
+[2.148s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules/__init__.py to __init__.cpython-312.pyc
+[2.153s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules/PoseDetectorModule.py to PoseDetectorModule.cpython-312.pyc
+[2.158s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/Detector_Modules/HandDetectorModule.py to HandDetectorModule.cpython-312.pyc
+[2.164s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/robo_pub/__init__.py to __init__.cpython-312.pyc
+[2.168s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/robo_pub/ros_publisher.py to ros_publisher.cpython-312.pyc
+[2.173s] running install_data
+[2.176s] copying package.xml -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/share/teleop_vision
+[2.179s] running install_egg_info
+[2.213s] removing '/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision-0.0.0-py3.12.egg-info' (and everything under it)
+[2.220s] Copying ../build/teleop_vision/teleop_vision.egg-info to /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages/teleop_vision-0.0.0-py3.12.egg-info
+[2.246s] running install_scripts
+[2.463s] writing list of installed files to '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/install.log'
+[2.486s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_vision build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_vision/install.log --single-version-externally-managed install_data

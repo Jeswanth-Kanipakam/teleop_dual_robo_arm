@@ -1,0 +1,19 @@
+[1.181s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_controller build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/install.log --single-version-externally-managed install_data
+[1.546s] running egg_info
+[1.579s] writing ../build/teleop_controller/teleop_controller.egg-info/PKG-INFO
+[1.584s] writing dependency_links to ../build/teleop_controller/teleop_controller.egg-info/dependency_links.txt
+[1.588s] writing requirements to ../build/teleop_controller/teleop_controller.egg-info/requires.txt
+[1.591s] writing top-level names to ../build/teleop_controller/teleop_controller.egg-info/top_level.txt
+[1.664s] reading manifest file '../build/teleop_controller/teleop_controller.egg-info/SOURCES.txt'
+[1.667s] writing manifest file '../build/teleop_controller/teleop_controller.egg-info/SOURCES.txt'
+[1.670s] running build
+[1.670s] running build_py
+[1.673s] running install
+[1.679s] running install_lib
+[1.718s] running install_data
+[1.720s] running install_egg_info
+[1.754s] removing '/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[1.762s] Copying ../build/teleop_controller/teleop_controller.egg-info to /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller-0.0.0-py3.12.egg-info
+[1.798s] running install_scripts
+[2.016s] writing list of installed files to '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/install.log'
+[2.040s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_controller build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/install.log --single-version-externally-managed install_data

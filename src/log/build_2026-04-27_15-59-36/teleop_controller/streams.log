@@ -1,0 +1,38 @@
+[1.160s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_controller build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/install.log --single-version-externally-managed install_data
+[1.527s] running egg_info
+[1.527s] creating ../build/teleop_controller/teleop_controller.egg-info
+[1.562s] writing ../build/teleop_controller/teleop_controller.egg-info/PKG-INFO
+[1.566s] writing dependency_links to ../build/teleop_controller/teleop_controller.egg-info/dependency_links.txt
+[1.569s] writing requirements to ../build/teleop_controller/teleop_controller.egg-info/requires.txt
+[1.571s] writing top-level names to ../build/teleop_controller/teleop_controller.egg-info/top_level.txt
+[1.573s] writing manifest file '../build/teleop_controller/teleop_controller.egg-info/SOURCES.txt'
+[1.646s] reading manifest file '../build/teleop_controller/teleop_controller.egg-info/SOURCES.txt'
+[1.649s] writing manifest file '../build/teleop_controller/teleop_controller.egg-info/SOURCES.txt'
+[1.652s] running build
+[1.653s] running build_py
+[1.653s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build
+[1.653s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib
+[1.654s] creating /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller
+[1.656s] copying teleop_controller/hand_tracking_node.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller
+[1.659s] copying teleop_controller/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller
+[1.663s] copying teleop_controller/kinematics_utils.py -> /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller
+[1.665s] running install
+[1.671s] running install_lib
+[1.718s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller
+[1.719s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller/hand_tracking_node.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller
+[1.722s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller/__init__.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller
+[1.725s] copying /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build/lib/teleop_controller/kinematics_utils.py -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller
+[1.729s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller/hand_tracking_node.py to hand_tracking_node.cpython-312.pyc
+[1.733s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller/__init__.py to __init__.cpython-312.pyc
+[1.744s] byte-compiling /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller/kinematics_utils.py to kinematics_utils.cpython-312.pyc
+[1.747s] running install_data
+[1.748s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/share/ament_index
+[1.749s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/share/ament_index/resource_index
+[1.749s] creating /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/share/ament_index/resource_index/packages
+[1.751s] copying resource/teleop_controller -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/share/ament_index/resource_index/packages
+[1.753s] copying package.xml -> /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/share/teleop_controller
+[1.755s] running install_egg_info
+[1.790s] Copying ../build/teleop_controller/teleop_controller.egg-info to /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages/teleop_controller-0.0.0-py3.12.egg-info
+[1.834s] running install_scripts
+[2.049s] writing list of installed files to '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/install.log'
+[2.073s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/teleop_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/teleop_controller build --build-base /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/build install --record /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_controller/install.log --single-version-externally-managed install_data

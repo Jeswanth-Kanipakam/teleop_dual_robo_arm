@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dual_piper">
+
+    <!-- World link -->
+    <link name="world"/>
+
+    <!-- Base link -->
+    <link name="base"/>
+
+    <!-- Fixed joint -->
+    <joint name="world_to_base" type="fixed">
+        <parent link="world"/>
+        <child link="base"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Include macros -->
+    <xacro:include filename="$(find teleop_description)/urdf/teleop_description.xacro"/>
+
+    <!-- LEFT ARM -->
+    <xacro:piper_arm 
+        prefix="left_" 
+        parent_link="base" 
+        x="0" y="0.2" z="0" 
+        roll="0" pitch="0" yaw="0"/>
+
+    <!-- RIGHT ARM -->
+    <xacro:piper_arm 
+        prefix="right_" 
+        parent_link="base" 
+        x="0" y="-0.2" z="0" 
+        roll="0" pitch="0" yaw="0"/>
+
+</robot>

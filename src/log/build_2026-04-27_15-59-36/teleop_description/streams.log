@@ -1,0 +1,64 @@
+[0.050s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/eeiww/ud90uhak/teleop_ws/src/teleop_description -DCMAKE_INSTALL_PREFIX=/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description
+[0.140s] -- The C compiler identification is GNU 13.3.0
+[0.219s] -- The CXX compiler identification is GNU 13.3.0
+[0.241s] -- Detecting C compiler ABI info
+[0.460s] -- Detecting C compiler ABI info - done
+[0.472s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.472s] -- Detecting C compile features
+[0.473s] -- Detecting C compile features - done
+[0.491s] -- Detecting CXX compiler ABI info
+[0.719s] -- Detecting CXX compiler ABI info - done
+[0.732s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.732s] -- Detecting CXX compile features
+[0.732s] -- Detecting CXX compile features - done
+[0.754s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.893s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.086s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.302s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.302s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.312s] -- Added test 'lint_cmake' to check CMake code style
+[1.319s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.354s] -- Added test 'xmllint' to check XML markup files
+[1.382s] -- Configuring done (1.3s)
+[1.486s] -- Generating done (0.1s)
+[1.536s] -- Build files have been written to: /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description
+[1.541s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/eeiww/ud90uhak/teleop_ws/src/teleop_description -DCMAKE_INSTALL_PREFIX=/home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description
+[1.542s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description -- -j8 -l8
+[1.587s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description -- -j8 -l8
+[1.599s] Invoking command in '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description
+[1.608s] -- Install configuration: ""
+[1.609s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes
+[1.615s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link6.STL
+[1.624s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/base_link.STL
+[1.650s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/base.STL
+[1.738s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link5.STL
+[1.773s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link4.STL
+[1.801s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link3.STL
+[1.847s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/gripper_base.STL
+[1.871s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link7.STL
+[1.880s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link8.STL
+[1.892s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link2.STL
+[1.950s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/meshes/link1.STL
+[1.973s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/urdf
+[1.978s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/urdf/dual_robot.urdf.xacro
+[1.984s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/urdf/teleop_description.xacro
+[1.991s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/launch
+[1.996s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/launch/visualize.launch.py
+[2.001s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/rviz
+[2.005s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/rviz/teleop.rviz
+[2.016s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/ament_index/resource_index/package_run_dependencies/teleop_description
+[2.026s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/ament_index/resource_index/parent_prefix_path/teleop_description
+[2.036s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/environment/ament_prefix_path.sh
+[2.042s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/environment/ament_prefix_path.dsv
+[2.048s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/environment/path.sh
+[2.054s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/environment/path.dsv
+[2.060s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/local_setup.bash
+[2.066s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/local_setup.sh
+[2.073s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/local_setup.zsh
+[2.079s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/local_setup.dsv
+[2.085s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/package.dsv
+[2.095s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/ament_index/resource_index/packages/teleop_description
+[2.109s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/cmake/teleop_descriptionConfig.cmake
+[2.110s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/cmake/teleop_descriptionConfig-version.cmake
+[2.116s] -- Installing: /home/eeiww/ud90uhak/teleop_ws/src/install/teleop_description/share/teleop_description/package.xml
+[2.141s] Invoked command in '/home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/eeiww/ud90uhak/teleop_ws/src/build/teleop_description
