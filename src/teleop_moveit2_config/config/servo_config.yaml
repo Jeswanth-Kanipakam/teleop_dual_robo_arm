@@ -1,0 +1,17 @@
+# MoveIt Servo Configuration
+use_gazebo: false
+status_topic: servo_node/status
+command_out_topic: /joint_trajectory_controller/joint_trajectory
+command_out_type: trajectory_msgs/JointTrajectory
+
+## Move Group Settings
+move_group_name: left_arm # You will need one instance per arm
+planning_frame: world
+
+## Cartesian Setup
+is_primary_joint_variable: false
+check_collisions: true
+collision_check_rate: 10.0
+
+## Smoothing
+smoothing_filter_coeff: 0.1 # Low value = smoother movement

@@ -1,0 +1,13 @@
+use_gazebo: false
+status_topic: /right_servo_node/status
+command_out_topic: /right_arm_controller/joint_trajectory
+command_out_type: trajectory_msgs/JointTrajectory
+
+move_group_name: right_arm
+planning_frame: world
+
+is_primary_joint_variable: false
+check_collisions: true
+collision_check_rate: 10.0
+
+smoothing_filter_coeff: 0.1
