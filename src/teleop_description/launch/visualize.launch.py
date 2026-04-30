@@ -7,10 +7,8 @@ from launch.substitutions import Command
 def generate_launch_description():
     pkg_share = get_package_share_directory('teleop_description')
     
-    # Use the absolute path to the xacro file
     xacro_file = os.path.join(pkg_share, 'urdf', 'dual_robot.urdf.xacro')
 
-    # The space after 'xacro ' is critical for the command to execute
     robot_description_config = Command(['xacro ', xacro_file])
     
     return LaunchDescription([
