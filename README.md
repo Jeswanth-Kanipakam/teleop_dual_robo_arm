@@ -1,6 +1,6 @@
 # Dual-Arm Vision-Based Teleoperation System
 
-This project implements a ROS 2-based teleoperation platform that enables a single human operator to control a pair of dual 6DOF Piper arms and two-finger grippers in a visualization environment. By leveraging real-time computer vision and high-speed motion planning, the system mirrors the operator's physical movements with millisecond-level latency.
+This project implements a ROS 2-based teleoperation platform that enables a single human operator to control a pair of dual 6DOF Piper arms and two-finger grippers in a visualization environment. By leveraging real-time computer vision and high speed motion planning, the system mirrors the operator's physical movements with millisecond level latency.
 
 ## 🚀 Key Features
 * **Dual Arm Control**: Independent control of two 6DOF arms using MediaPipe hand classification (Left vs. Right).
@@ -32,6 +32,49 @@ These libraries power the vision-tracking engine:
 ```bash
 # Note: On Ubuntu 24.04+, use --break-system-packages if not in a venv
 pip install opencv-python mediapipe numpy
+```
+
+## 📂 Workspace Structure
+
+The workspace follows a modular design, separating the high-level vision logic from the low-level robot configuration.
+
+```
+teleop_ws/
+└── src/
+    ├── teleop_description/                   # Robot Physical Description Package
+    │   ├── meshes/                           # 3D STL files for robot links (base to link8)
+    │   ├── urdf/                             # Robot model definitions
+    │   │   ├── dual_robot.urdf.xacro         # Main XACRO for dual-arm assembly
+    │   │   └── teleop_description.xacro      # Base robot link and joint properties
+    │   ├── rviz/
+    │   │   └── teleop.rviz                   # Basic RViz config for model visualization
+    │   ├── launch/
+    │   │   └── visualize.launch.py           # Simple launch for checking URDF in RViz
+    │   ├── package.xml                       # Metadata for description package
+    │   └── CMakeLists.txt                    # Build instructions for STL/URDF installation
+    │
+    ├── teleop_moveit2_config/                # Motion Planning Configuration Package
+    │   ├── config/
+    │   │   ├── dual_piper.srdf               # Semantic info (Groups, EE, Collisions)
+    │   │   ├── left_servo_config.yaml        # High-speed MoveIt Servo parameters
+    │   │   ├── right_servo_config.yaml       # Parameters for dual-arm teleop
+    │   │   └── ros2_controllers.yaml         # Controller manager & joint broadcaster
+    │   ├── launch/
+    │   │   └── demo.launch.py                # Main visualization and planning entry
+    │   └── package.xml                       # MoveIt 2 & planning dependencies
+    │
+    └── teleop_vision/                        # Teleoperation & Computer Vision Package
+        ├── teleop_vision/                    # Python source folder
+        │   ├── vision_node.py                # CORE: Hand-to-Pose mapping node
+        │   └── __init__.py
+        ├── Detector_Modules/                 # Computer Vision modules
+        │   ├── HandDetectorModule.py         # CORE: MediaPipe landmark extraction
+        │   └── __init__.py
+        ├── launch/
+        │   ├── integrated_teleop.launch.py   # CORE: Top-level system launch
+        │   └── vision_teleop.launch.py       # Isolated vision node launch
+        ├── package.xml                       # Python dependencies (mediapipe, cv2)
+        └── setup.py                          # Script installation & entry points
 ```
 
 ## 📂 Setup and Build
@@ -78,4 +121,6 @@ This project utilizes the following open-source resources:
 
 ## 👤 Author
 **Jeswanth Kanipakam** 
+
 M.Sc. Autonomy Technologies  
+https://www.linkedin.com/in/jeswanth-kanipakam/
