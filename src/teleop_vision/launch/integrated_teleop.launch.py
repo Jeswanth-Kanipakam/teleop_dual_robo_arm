@@ -17,14 +17,7 @@ def generate_launch_description():
     left_servo_config = os.path.join(config_path, 'config', 'left_servo_config.yaml')
     right_servo_config = os.path.join(config_path, 'config', 'right_servo_config.yaml')
 
-    # -----------------------------
-    # Launch MoveIt demo
-    # Starts:
-    # - RViz
-    # - move_group
-    # - controllers
-    # - robot_state_publisher
-    # -----------------------------
+
     moveit_demo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -35,9 +28,6 @@ def generate_launch_description():
         )
     )
 
-    # -----------------------------
-    # Servo configs
-    # -----------------------------
     left_servo_config = os.path.join(
         moveit_config_dir,
         'config',
@@ -50,9 +40,6 @@ def generate_launch_description():
         'right_servo_config.yaml'
     )
 
-    # -----------------------------
-    # Left servo node
-    # -----------------------------
     left_servo = Node(
         package='moveit_servo',
         executable='servo_node_main',
@@ -61,9 +48,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    # -----------------------------
-    # Right servo node
-    # -----------------------------
     right_servo = Node(
         package='moveit_servo',
         executable='servo_node_main',
@@ -72,9 +56,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    # -----------------------------
-    # Vision teleop node
-    # -----------------------------
     teleop = Node(
         package='teleop_vision',
         executable='teleop_mapper',
