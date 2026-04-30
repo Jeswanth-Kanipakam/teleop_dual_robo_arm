@@ -16,9 +16,6 @@ class TeleopMapper(Node):
     def __init__(self):
         super().__init__('teleop_mapper')
 
-        # -------------------------------
-        # Pose publishers for dual servo
-        # -------------------------------
         self.left_pose_pub = self.create_publisher(
             PoseStamped,
             '/left_servo_node/target_pose',
@@ -31,19 +28,12 @@ class TeleopMapper(Node):
             10
         )
 
-        # -------------------------------
-        # Joint angle publisher
-        # Assignment requirement
-        # -------------------------------
         self.joint_pub = self.create_publisher(
             Float64MultiArray,
             '/teleop_joint_angles',
             10
         )
 
-        # -------------------------------
-        # Gripper action clients
-        # -------------------------------
         self.left_gripper_client = ActionClient(
             self,
             GripperCommand,
@@ -56,24 +46,14 @@ class TeleopMapper(Node):
             '/right_gripper_controller/gripper_cmd'
         )
 
-        # -------------------------------
-        # Hand detector
-        # -------------------------------
         self.hand_detector = HandDetector(maxHands=2)
-
-        # Webcam
         self.cap = cv2.VideoCapture(0)
 
         if not self.cap.isOpened():
             self.get_logger().error("Could not open webcam")
 
-        # smoothing
         self.alpha = 0.2
-
-        # timer
         self.create_timer(0.03, self.timer_callback)
-
-        # joint tracking vars
         self.left_j1 = 0.0
         self.left_j2 = 0.0
         self.right_j1 = 0.0
@@ -101,28 +81,19 @@ class TeleopMapper(Node):
 
                 if center is None:
                     continue
-
-                # -------------------------------
-                # Convert hand position to pose
-                # -------------------------------
+                    
                 msg = PoseStamped()
                 msg.header.frame_id = "world"
                 msg.header.stamp = self.get_clock().now().to_msg()
 
-                # fixed depth
                 msg.pose.position.x = 0.4
 
-                # horizontal hand movement
                 msg.pose.position.y = (center[0] / 640 - 0.5) * 0.8
 
-                # vertical hand movement
                 msg.pose.position.z = (0.5 - center[1] / 480) * 0.8 + 0.5
 
                 msg.pose.orientation.w = 1.0
 
-                # -------------------------------
-                # Publish to corresponding arm
-                # -------------------------------
                 if label == "Left":
                     self.left_j1 = msg.pose.position.y
                     self.left_j2 = msg.pose.position.z
@@ -133,15 +104,9 @@ class TeleopMapper(Node):
                     self.right_j2 = msg.pose.position.z
                     self.right_pose_pub.publish(msg)
 
-                # -------------------------------
-                # Gripper control
-                # -------------------------------
                 aperture = self.hand_detector.findAperture()
                 self.send_gripper_goal(label, aperture)
 
-        # -------------------------------
-        # Publish joint angle values
-        # -------------------------------
         joint_msg = Float64MultiArray()
         joint_msg.data = [
             self.left_j1,
@@ -152,14 +117,12 @@ class TeleopMapper(Node):
 
         self.joint_pub.publish(joint_msg)
 
-        # Display
         cv2.imshow("Dual Arm Teleop", frame)
         cv2.waitKey(1)
 
     def send_gripper_goal(self, side, value):
         goal = GripperCommand.Goal()
 
-        # Scale hand aperture to gripper opening
         goal.command.position = float(value) * 0.04
 
         if side == "Left":
