@@ -7,7 +7,7 @@ This project implements a ROS 2-based teleoperation platform that enables a sing
 * **Swift & Smooth Motion**: Integrated with **MoveIt Servo** for low-latency Cartesian-to-Joint conversion, reaching target values within milliseconds.
 * **Gesture-Based Gripping**: Maps physical hand aperture to dual-finger gripper actions via Action Clients.
 * **Safe Operation**: Built-in self-collision avoidance for dual arms and smoothing filters to handle noisy camera data.
-* **2D Constraint Compliance**: Optimized for standard webcams by constraining movement to a specific $Y-Z$ plane with fixed depth ($X = 0.4$).
+* **2D Constraint Compliance**: Optimized for standard webcams by constraining movement to a specific $Y-Z$ plane with fixed depth.
 
 ## 🛠️ Prerequisites & Installation
 
