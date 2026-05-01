@@ -24,7 +24,10 @@ sudo apt install ros-${ROS_DISTRO}-moveit-servo \
                  ros-${ROS_DISTRO}-v4l2-camera \
                  ros-${ROS_DISTRO}-joint-state-broadcaster \
                  ros-${ROS_DISTRO}-joint-trajectory-controller \
-                 ros-${ROS_DISTRO}-gripper-controllers
+                 ros-${ROS_DISTRO}-gripper-controllers \
+                 ros-${ROS_DISTRO}-vision-msgs \
+                 ros-${ROS_DISTRO}-control-msgs \
+                 ros-${ROS_DISTRO}-std-srvs \
 ```
 
 ### 3. Install Python Libraries
