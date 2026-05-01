@@ -1,10 +1,43 @@
-import mediapipe as mp
-import cv2
+import os
+
 import numpy as np
+
+
+def load_legacy_mediapipe():
+    os.environ.setdefault('MPLCONFIGDIR', '/tmp/matplotlib')
+    os.makedirs(os.environ['MPLCONFIGDIR'], exist_ok=True)
+
+    try:
+        import mediapipe as mp
+    except ImportError:
+        return None
+
+    if not hasattr(mp, 'solutions') or not hasattr(mp.solutions, 'hands'):
+        return None
+    return mp
+
+
+LEGACY_MEDIAPIPE = load_legacy_mediapipe()
+
+import cv2
 
 
 class HandDetector:
     def __init__(self, maxHands=2):
+        mp = LEGACY_MEDIAPIPE
+        if mp is None:
+            print(
+                "MediaPipe legacy solutions API is unavailable. "
+                "Install a mediapipe version that provides mp.solutions "
+                "to enable hand tracking.",
+                flush=True
+            )
+            self.enabled = False
+            self.results = None
+            self.lm_list = []
+            return
+
+        self.enabled = True
         self.mpHands = mp.solutions.hands
         self.hands = self.mpHands.Hands(
             static_image_mode=False,
@@ -19,6 +52,9 @@ class HandDetector:
         self.lm_list = []
 
     def findHands(self, frame, draw=True):
+        if not self.enabled:
+            return frame
+
         imgRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         self.results = self.hands.process(imgRGB)
 
@@ -35,7 +71,7 @@ class HandDetector:
     def findPosition(self, frame, hand_num=0):
         self.lm_list = []
 
-        if self.results.multi_hand_landmarks:
+        if self.enabled and self.results.multi_hand_landmarks:
             hand = self.results.multi_hand_landmarks[hand_num]
             h, w, _ = frame.shape
 
