@@ -2,6 +2,10 @@
 
 This project implements a ROS 2-based teleoperation platform that enables a single human operator to control a pair of dual 6DOF Piper arms and two-finger grippers in a visualization environment. By leveraging real-time computer vision and high speed motion planning, the system mirrors the operator's physical movements with millisecond level latency.
 
+
+
+
+
 ## 🚀 Key Features
 * **Dual Arm Control**: Independent control of two 6DOF arms using MediaPipe hand classification (Left vs. Right).
 * **Swift & Smooth Motion**: Integrated with **MoveIt Servo** for low-latency Cartesian-to-Joint conversion, reaching target values within milliseconds.
@@ -121,6 +125,12 @@ This project utilizes the following open-source resources:
 3.  **ROS 2 Control**:
     * **Implementation**: Defined in `ros2_controllers.yaml` and `dual_piper.ros2_control.xacro`.
     * **Analysis**: Used `mock_components/GenericSystem` for safe visualization without physical hardware.
+  
+##  Output
+
+
+https://github.com/user-attachments/assets/6ffd723b-626c-4fa5-a99b-92e912a98dc9
+
 
 ## 👤 Author
 **Jeswanth Kanipakam** 
