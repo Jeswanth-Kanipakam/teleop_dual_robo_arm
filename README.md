@@ -3,7 +3,7 @@
 This project implements a ROS 2-based teleoperation platform that enables a single human operator to control a pair of dual 6DOF Piper arms and two-finger grippers in a visualization environment. By leveraging real-time computer vision and high speed motion planning, the system mirrors the operator's physical movements with millisecond level latency.
 
 
-
+<img width="2560" height="1440" alt="Screenshot from 2026-05-11 16-31-31" src="https://github.com/user-attachments/assets/ac31942e-d1f7-409f-9894-623387396f5d" />
 
 
 ## 🚀 Key Features
