@@ -117,7 +117,7 @@ As per the assignment requirements, the system publishes live joint data:
 This project utilizes the following open-source resources:
 
 1.  **MediaPipe (Google)**:
-    * **Implementation**: Used in `HandDetectorModule.py` to identify 21 hand landmarks and classify handedness.
+    * **Implementation**: Used in `HandDetectorModule.py` to identify hand landmarks and classify handedness.
     * **Analysis**: I extracted the `label` (Left/Right) to route commands and used the Euclidean distance between the thumb and index finger to calculate gripper aperture.
 2.  **MoveIt 2 & MoveIt Servo**:
     * **Implementation**: Configured as the real-time bridge via `servo_config.yaml`.
